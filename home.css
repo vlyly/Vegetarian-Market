@@ -19,7 +19,8 @@ button {
 }
 
 input:focus,
-button:focus {
+button:focus,
+a:focus {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
