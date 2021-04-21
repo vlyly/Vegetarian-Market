@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.screenReader_only {
+  display: none;
+}
+/****/
+.wrapper {
+  width: 100vw;
+}
+
+.contents_container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/***header***/
+.display_flex {
+  display: flex;
+}
+
+.topBar_container {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.topBar_item {
+  padding: 0 7px;
+  font-size: 15px;
+  list-style: none;
+}
+
+.searchBar_container {
+  justify-content: space-between;
+  width: 95%;
+  padding: 5px 20px;
+  margin: 0 auto;
+  background-color: rgb(241, 247, 238);
+}
+
+.user_search_input {
+  width: 87%;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+/***main***/
+
+.main_container {
+  width: 100%;
+}
+
+.category_item {
+  width: 25%;
+  text-align: center;
+}
+
+.category_item_anchor {
+  display: inline-block;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.selected {
+  border-bottom: darkseagreen 3px solid;
+  color: darkseagreen;
+}
+
+.image_slide_container {
+  margin-bottom: 50px;
+}
+
+.image_slide {
+  width: 100%;
+  max-width: 960px;
+  overflow-x: scroll;
+}
+
+.image_slide::after {
+  display: block;
+  clear: left;
+  content: "";
+}
+
+.image_slide_list {
+  position: relative;
+  width: 400%;
+  float: left;
+}
+
+.image_slide_list_item {
+  flex-shrink: 0;
+  position: relative;
+  width: 100vw;
+  max-width: 960px;
+  height: 250px;
+  overflow-y: hidden;
+}
+
+.slide_image {
+  display: block;
+  width: 100%;
+}
+
+#slide_image04 {
+  position: relative;
+  top: -50px;
+}
+
+.slide_description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button_container {
+  text-align: right;
+}
+
+.image_slide_control_button:last-of-type {
+  margin-right: 5px;
+}
+
+.image_slide_control_button {
+  color: darkseagreen;
+}
+
+.image_slide_control_button:hover {
+  opacity: 0.5;
+}
+
+.quickMenu {
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.quickMenu_item {
+  display: block;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+/* .quickMenu_item_img {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 5px auto;
+  border-radius: 23px;
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+  text-align: center;
+} */
+
+.quickMenu_item_img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 5px auto;
+  border-radius: 13px;
+  background-position: center;
+  background-size: cover;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* .quickMenu_item_img > i::before {
+  display: block;
+  margin: 13px 0;
+} */
+
+.quickMenu_item_img > i::before {
+  display: block;
+  margin: 13px 0;
+}
+
+.quickMenu_item_img_event {
+  background-color: rgb(252, 236, 150);
+  color: goldenrod;
+}
+
+.quickMenu_item_img_new {
+  background-color: lightpink;
+  color: rgb(250, 102, 124);
+}
+
+.quickMenu_item_img_sale {
+  background-color: rgb(212, 236, 212);
+  color: darkseagreen;
+}
+
+.quickMenu_item_img_todayDelivery {
+  background-color: rgb(166, 187, 224);
+  color: steelblue;
+}
+
+.quickMenu_item_img_ranking {
+  background-color: rgb(240, 192, 208);
+  color: palevioletred;
+}
+
+.quickMenu_item_img_store {
+  background-color: lightgrey;
+  color: gray;
+}
+
+.quickMenu_item_img_gift {
+  background-color: seashell;
+  color: rgb(167, 159, 154);
+}
+
+.quickMenu_item_img_showMore {
+  background-color: lavender;
+  color: slateblue;
+}
+
+.quickMenu_item_name {
+  width: 100%;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.ad {
+  justify-content: space-between;
+  margin: 0 10px 70px 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.ad_item {
+  width: 48%;
+}
+
+.ad_img {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 7px;
+  padding: 3px 7px;
+  background-color: pink;
+  border-radius: 10px;
+  text-align: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ad_img > i {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ad_first {
+  background-image: url("https://t1.daumcdn.net/cfile/blog/274A503857F6383F0E");
+  background-position-x: 45%;
+}
+
+.ad_second {
+  background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/09/15/istock-543594288.jpg?width=1200");
+  background-position-x: 45%;
+}
+
+.ad_temporary_description_title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ad_temporary_description_coment {
+  font-size: 12px;
+}
+
+.interview_img {
+  width: 95%;
+  height: 140px;
+  margin: 0 auto 70px auto;
+  border-radius: 10px;
+  background-image: url("https://k-kininaru.com/wp-content/uploads/2016/12/lsj01.jpg");
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.payment_promotion {
+  margin: 0 10px 70px 10px;
+  overflow-x: scroll;
+}
+
+.payment_promotion_item {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-shrink: 0;
+  width: 85px;
+  height: 140px;
+  padding: 0 5px;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.payment_promotion_item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.kbCard {
+  background-color: rgb(122, 113, 102);
+}
+
+.shinhanCard {
+  background-color: rgb(111, 120, 127);
+}
+
+.kakaoPay {
+  /* background-color: rgba(254, 229, 0); */
+  background-color: rgb(24, 22, 0);
+}
+
+.Npay {
+  background-color: rgb(3, 199, 90);
+}
+
+.payment_logo {
+  width: auto;
+  height: 25px;
+  margin: 0 auto 10px auto;
+}
+
+.landscape_logo {
+  height: 20px;
+}
+
+.payment_name {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.discount_rate {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.font_small {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}

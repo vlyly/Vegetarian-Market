@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <link rel="stylesheet" href="home.css"/>
+        <script src="https://kit.fontawesome.com/2884632ff3.js" crossorigin="anonymous"></script>
+        <title>🍅🥦🧅</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="contents_container">
+                <header>
+                    <div class="header_container">
+                        <div class="topBar_container display_flex">
+                            <h1 class="logo">Vegetarian Market</h1>
+                            <ul class="topBar_item_list display_flex">
+                                <li class="topBar_item">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i><span class="screenReader_only">장바구니</span></a>
+                                </li>
+                                <li class="topBar_item">
+                                    <a href="#"><i class="fas fa-user"></i><span class="screenReader_only">내 정보</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="searchBar_container display_flex">
+                            <input id="user_search_input" class="user_search_input" type="text" spellcheck="false" autocomplete="off"/>
+                            <button id="user_search_button" class="user_search_button" type=button aria-label="search button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="category_container">
+                            <ul class="category display_flex">
+                                <li class="category_item selected"><a id="category_item_home" class="category_item_anchor" href="#">홈</a></li>
+                                <li class="category_item"><a id="category_item_vegetable" class="category_item_anchor" href="#">야채</a></li>
+                                <li class="category_item"><a id="category_item_fruits" class="category_item_anchor" href="#">과일</a></li>
+                                <li class="category_item"><a id="category_item_grain" class="category_item_anchor" href="#">곡물</a></li>
+                                <li class="category_item"><a id="category_item_etc" class="category_item_anchor" href="#">기타</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="main_container">
+                        <div class="image_slide_container">
+                            <div class="image_slide">
+                                <ul class="image_slide_list display_flex">
+                                    <li class="image_slide_list_item"><img id="slide_image01" class="slide_image" src="img/organic01.jpg" alt="organic farming"/><div class="slide_description">Lorem ipsum dolor,</br> sit amet consectetur adipisicing elit.</div></li>
+                                    <li class="image_slide_list_item"><img id="slide_image02" class="slide_image" src="img/fresh.jpg" alt="fresh products"/><div class="slide_description">Lorem ipsum dolor,</br> sit amet consectetur adipisicing elit.</div></li>
+                                    <li class="image_slide_list_item"><img id="slide_image03" class="slide_image" src="img/fair trade.jpg" alt="fair trade"/><div class="slide_description">Lorem ipsum dolor,</br> sit amet consectetur adipisicing elit.</div></li>
+                                    <li class="image_slide_list_item"><img id="slide_image04" class="slide_image" src="img/sprout.jpg" alt="non genetic modification"/><div class="slide_description">Lorem ipsum dolor,</br> sit amet consectetur adipisicing elit.</div></li>
+                                </ul>
+                            </div>
+                            <div class="button_container">
+                                <button id="prev_button" class="image_slide_control_button" type="button" aria-label="show previous image"><i class="fas fa-chevron-left"></i></button>
+                                <button id="next_button" class="image_slide_control_button" type="button" aria-label="show next image"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <ul class="quickMenu display_flex">
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_event"><i class="fas fa-bullhorn"></i></div><div class="quickMenu_item_name">이벤트</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_new"><i class="fas fa-heart"></i></div><div class="quickMenu_item_name">신상품</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_sale"><i class="fas fa-percentage"></i></div><div class="quickMenu_item_name">할인상품</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_todayDelivery"><i class="fas fa-truck"></i></div><div class="quickMenu_item_name">당일배송</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_ranking"><i class="fas fa-medal"></i></div><div class="quickMenu_item_name">랭킹</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_store"><i class="fas fa-store"></i></div><div class="quickMenu_item_name">매장찾기</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_gift"><i class="fas fa-gift"></i></div><div class="quickMenu_item_name">선물하기</div></a></li>
+                            <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_img quickMenu_item_img_showMore"><i class="fas fa-ellipsis-h"></i></div><div class="quickMenu_item_name">더 보기</div></a></li>
+                        </ul>
+                        <ul class="ad display_flex">
+                            <li class="ad_item">
+                                <div class="ad_img ad_first">
+                                    <i class="fas fa-ad"></i>
+                                </div>
+                                <div class="ad_temporary_description">
+                                    <h5 class="ad_temporary_description_title">
+                                        Lorem ipsum dolor sit.
+                                    </h5>
+                                    <p class="ad_temporary_description_coment">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ad_item">
+                                <div class="ad_img ad_second">
+                                    <i class="fas fa-ad"></i>
+                                </div>
+                                <div class="ad_temporary_description">
+                                    <h5 class="ad_temporary_description_title">
+                                        Lorem ipsum dolor sit.
+                                    </h5>
+                                    <p class="ad_temporary_description_coment">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="interview">
+                            <div class="interview_img"></div>
+                        </div>
+                        <ul class="payment_promotion display_flex">
+                            <li class="payment_promotion_item display_flex kbCard">
+                                <img class="payment_logo" src="img/payment_icon/kbCard.png" alt="payment icon"/>
+                                <div class="payment_name">국민카드</div>
+                                <div class="discount_rate"><span class="font_small">최대</br></span> 1만원</div>
+                            </li>
+                            <li class="payment_promotion_item display_flex shinhanCard">
+                                <img class="payment_logo" src="img/payment_icon/shinhanCard.png" alt="payment icon"/>
+                                <div class="payment_name">신한카드</div>
+                                <div class="discount_rate"><span class="font_small">최대</br></span> 3만원</div>
+                            </li>
+                            <li class="payment_promotion_item display_flex kakaoPay">
+                                <img class="payment_logo landscape_logo" src="img/payment_icon/kakaoPay.png" alt="payment icon"/>
+                                <div class="payment_name">카카오페이</div>
+                                <div class="discount_rate">~3%</div>
+                            </li>
+                            <li class="payment_promotion_item display_flex Npay">
+                                <img class="payment_logo landscape_logo" src="img/payment_icon/Npay.png" alt="payment icon"/>
+                                <div class="payment_name">네이버페이</div>
+                                <div class="discount_rate">~5%</div>
+                            </li>
+                        </ul>
+                        <ul class="best_seller display_flex">
+                            <li class="best_seller_item">
+                                <div class="best_seller_temporary"></div>
+                            </li>
+                            <li class="best_seller_item">
+                                <div class="best_seller_temporary"></div>
+                            </li>
+                            <li class="best_seller_item">
+                                <div class="best_seller_temporary"></div>
+                            </li>
+                            <li class="best_seller_item">
+                                <div class="best_seller_temporary"></div>
+                            </li>
+                            <li class="best_seller_item">
+                                <div class="best_seller_temporary"></div>
+                            </li>
+                            <li class="best_seller_item">
+                                <div class="best_seller_temporary"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
