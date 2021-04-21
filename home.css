@@ -19,10 +19,8 @@ button {
 }
 
 input:focus,
-button:focus,
-a:focus {
+button:focus {
   outline: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 ul {
@@ -181,15 +179,20 @@ li {
 }
 
 .quickMenu {
-  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 70px;
 }
 
 .quickMenu_item {
   display: block;
   width: 25%;
-  margin-bottom: 10px;
+}
+
+.quickMenu_item_anchor {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 10px auto;
 }
 
 /* .quickMenu_item_img {
