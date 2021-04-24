@@ -63,7 +63,7 @@ li {
 
 .topBar_item {
   padding: 0 7px;
-  font-size: 15px;
+  font-size: 17px;
   list-style: none;
 }
 
@@ -81,7 +81,7 @@ li {
   border: none;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /***main***/
@@ -299,7 +299,7 @@ li {
 }
 
 .ad_img > i {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .ad_first {
@@ -312,25 +312,50 @@ li {
   background-position-x: 45%;
 }
 
-.ad_temporary_description_title {
+.ad_description_title {
   font-size: 14px;
   font-weight: 700;
 }
 
-.ad_temporary_description_coment {
+.ad_description_coment {
   font-size: 12px;
 }
 
-.interview_img {
-  width: 95%;
-  height: 140px;
-  margin: 0 auto 70px auto;
+.banner {
+  margin: 0 10px 70px 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.banner_img {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 13px;
   border-radius: 10px;
-  background-image: url("https://k-kininaru.com/wp-content/uploads/2016/12/lsj01.jpg");
-  background-position-y: 25%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.banner_first {
+  background-image: url("https://k-kininaru.com/wp-content/uploads/2016/12/lsj01.jpg");
+  background-position-y: 25%;
+}
+
+.banner_second {
+  background-image: url("https://i.pinimg.com/originals/ad/61/0c/ad610ca7635874f692912db9d65d4576.jpg");
+}
+
+.banner_third {
+  background-image: url("https://cdn.hswstatic.com/gif/goat-boy.jpg");
+  background-position-y: 15%;
+}
+
+/* .banner > h5 {
+  font-size: 16px;
+}
+
+.banner > p {
+  font-size: 13px;
+} */
 
 .payment_promotion {
   margin: 0 10px 70px 10px;
@@ -360,6 +385,14 @@ li {
 
 .shinhanCard {
   background-color: rgb(111, 120, 127);
+}
+
+.bc {
+  background-color: rgb(91, 87, 88);
+}
+
+.nonghyup {
+  background-color: rgb(33, 90, 153);
 }
 
 .kakaoPay {
@@ -399,4 +432,165 @@ li {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: -0.03em;
+}
+
+.item_slide_container {
+  margin: 0 10px 70px 10px;
+}
+
+.best_seller {
+  overflow-x: scroll;
+  font-family: "Roboto", sans-serif;
+}
+
+.best_seller_item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.image_box {
+  width: 130px;
+  height: 130px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.best_seller_item_img {
+  width: 100%;
+}
+
+.item_name {
+  margin-top: 3px;
+  font-size: 13px;
+  word-break: keep-all;
+}
+
+.item_price {
+  margin: 3px 0;
+  font-size: 17px;
+}
+
+.price_font_small {
+  font-size: 12px;
+}
+
+.item_review::before {
+  display: inline-block;
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  font-weight: 900;
+  color: rgb(255, 208, 0);
+}
+
+.item_review {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  color: rgb(196, 196, 196);
+}
+
+.best_seller_themes_control_container {
+  margin-bottom: 15px;
+}
+
+.best_seller_control_button {
+  padding: 3px 4px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.button_twenty_likes {
+  border: 1px solid palevioletred;
+  color: palevioletred;
+}
+
+.button_twenty_likes_selected {
+  background-color: palevioletred;
+  color: white;
+}
+
+.button_bbq_items {
+  border: 1px solid coral;
+  color: coral;
+}
+
+.button_bbq_items_selected {
+  background-color: coral;
+  color: white;
+}
+
+.button_fresh_morning {
+  border: 1px solid yellowgreen;
+  color: yellowgreen;
+}
+
+.button_fresh_morning_selected {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.display_none {
+  display: none;
+}
+
+.time_sale_items_container {
+  margin-bottom: 70px;
+  font-family: "Roboto", sans-serif;
+}
+
+.time_sale_item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.time_sale_item_image_count_container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  overflow-y: hidden;
+}
+
+.time_sale_item_img {
+  width: 100%;
+}
+
+.time_sale_count {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 7px 0;
+  background-color: rgba(49, 34, 22, 0.5);
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.time_sale_item_description {
+  margin: 0 10px;
+}
+
+.time_sale_count > span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.time_sale_item_name {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.time_sale_item_price {
+  font-size: 17px;
+}
+
+.discount_range {
+  margin-right: 5px;
+  color: crimson;
+}
+
+.original_price {
+  margin-left: 5px;
+  color: gray;
+  font-size: 14px;
+  text-decoration: line-through 1px gray;
 }
