@@ -10,6 +10,9 @@ const fresh_morning_item_list = document.getElementById(
 );
 
 function itemListControl(event) {
+  twenty_likes_item_list.scrollLeft = 0;
+  bbq_items_item_list.scrollLeft = 0;
+  fresh_morning_item_list.scrollLeft = 0;
   button_twenty_likes.classList.remove("button_twenty_likes_selected");
   button_bbq_items.classList.remove("button_bbq_items_selected");
   button_fresh_morning.classList.remove("button_fresh_morning_selected");
