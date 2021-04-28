@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 
 * {
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
 
 a,
@@ -98,9 +100,9 @@ li {
 .category_item_anchor {
   display: inline-block;
   width: 100%;
+  padding: 12px 0;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
-  line-height: 35px;
 }
 
 .selected {
@@ -115,7 +117,7 @@ li {
 .image_slide {
   width: 100%;
   max-width: 960px;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .image_slide::after {
@@ -144,7 +146,12 @@ li {
   width: 100%;
 }
 
-#slide_image04 {
+#slide_list_item03 > img {
+  position: relative;
+  top: -70px;
+}
+
+#slide_list_item04 > img {
   position: relative;
   top: -50px;
 }
@@ -163,18 +170,19 @@ li {
 }
 
 .button_container {
+  margin: 3px 0;
   text-align: right;
 }
 
-.image_slide_control_button:last-of-type {
+.button_image_slide_control:last-of-type {
   margin-right: 5px;
 }
 
-.image_slide_control_button {
+.button_image_slide_control {
   color: darkseagreen;
 }
 
-.image_slide_control_button:hover {
+.button_image_slide_control:hover {
   opacity: 0.5;
 }
 
@@ -207,71 +215,79 @@ li {
   text-align: center;
 } */
 
-.quickMenu_item_img {
+.quickMenu_item_icon {
   display: block;
   width: 56px;
   height: 56px;
   margin: 0 auto 5px auto;
   border-radius: 13px;
-  background-position: center;
-  background-size: cover;
   font-size: 30px;
   text-align: center;
 }
 
-/* .quickMenu_item_img > i::before {
-  display: block;
-  margin: 13px 0;
-} */
-
-.quickMenu_item_img > i::before {
+.quickMenu_item_icon > i::before {
   display: block;
   margin: 13px 0;
 }
 
-.quickMenu_item_img_event {
+.quickMenu_item_icon_event {
   background-color: rgb(252, 236, 150);
   color: goldenrod;
 }
 
-.quickMenu_item_img_new {
+.quickMenu_item_icon_new {
   background-color: lightpink;
   color: rgb(250, 102, 124);
 }
 
-.quickMenu_item_img_sale {
+.quickMenu_item_icon_sale {
   background-color: rgb(212, 236, 212);
   color: darkseagreen;
 }
 
-.quickMenu_item_img_todayDelivery {
+.quickMenu_item_icon_todayDelivery {
   background-color: rgb(166, 187, 224);
   color: steelblue;
 }
 
-.quickMenu_item_img_ranking {
+.quickMenu_item_icon_ranking {
   background-color: rgb(240, 192, 208);
   color: palevioletred;
 }
 
-.quickMenu_item_img_store {
+.quickMenu_item_icon_store {
   background-color: lightgrey;
-  color: gray;
+  color: rgb(128, 128, 128);
 }
 
-.quickMenu_item_img_gift {
+.quickMenu_item_icon_gift {
   background-color: seashell;
   color: rgb(167, 159, 154);
 }
 
-.quickMenu_item_img_showMore {
+.quickMenu_item_icon_showMore {
   background-color: lavender;
   color: slateblue;
 }
 
+.quickMenu_item_icon_review {
+  background-color: rgb(224, 204, 226);
+  color: rgb(161, 121, 165);
+}
+
+.quickMenu_item_icon_recipe {
+  background-color: rgb(255, 217, 147);
+  color: orange;
+}
+
+.quickMenu_item_icon_inquiry {
+  background-color: rgb(219, 253, 242);
+  color: rgb(109, 216, 180);
+}
+
 .quickMenu_item_name {
   width: 100%;
-  font-size: 11px;
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
@@ -328,9 +344,8 @@ li {
 
 .banner_img {
   width: 100%;
-  height: 120px;
-  margin-bottom: 13px;
-  border-radius: 10px;
+  height: 100px;
+  margin-bottom: 70px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -341,21 +356,15 @@ li {
 }
 
 .banner_second {
-  background-image: url("https://i.pinimg.com/originals/ad/61/0c/ad610ca7635874f692912db9d65d4576.jpg");
+  background-image: url("https://www.veganfamilyrecipes.com/wp-content/uploads/2018/02/Creamy-Almond-Soup-Recipe-Vegan-1-of-7.jpg");
+  background-position: center;
+  /* background-color: lavenderblush; */
 }
 
 .banner_third {
   background-image: url("https://cdn.hswstatic.com/gif/goat-boy.jpg");
   background-position-y: 15%;
 }
-
-/* .banner > h5 {
-  font-size: 16px;
-}
-
-.banner > p {
-  font-size: 13px;
-} */
 
 .payment_promotion {
   margin: 0 10px 70px 10px;
@@ -447,6 +456,10 @@ li {
   margin-right: 10px;
 }
 
+.item_anchor {
+  display: block;
+}
+
 .image_box {
   width: 130px;
   height: 130px;
@@ -535,10 +548,9 @@ li {
 
 .time_sale_items_container {
   margin-bottom: 70px;
-  font-family: "Roboto", sans-serif;
 }
 
-.time_sale_item:not(:last-of-type) {
+.time_sale_item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -548,6 +560,7 @@ li {
   height: 170px;
   margin-bottom: 10px;
   overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 .time_sale_item_img {
@@ -561,20 +574,24 @@ li {
   padding: 7px 0;
   background-color: rgba(49, 34, 22, 0.5);
   color: white;
-  font-size: 22px;
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
-  letter-spacing: 0.07em;
   text-align: center;
 }
 
-.time_sale_item_description {
-  margin: 0 10px;
+.time_sale_count > strong {
+  font-size: 22px;
+  letter-spacing: 0.07em;
 }
 
 .time_sale_count > span {
   margin-left: 5px;
   font-size: 14px;
-  letter-spacing: initial;
+}
+
+.time_sale_item_description {
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .time_sale_item_name {
@@ -596,4 +613,115 @@ li {
   color: gray;
   font-size: 14px;
   text-decoration: line-through 1px gray;
+}
+
+.exhibition_container {
+  width: 100%;
+  padding: 0 5px;
+  margin-bottom: 70px;
+}
+
+.exhibition_container a:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.exhibition_item_box {
+  position: relative;
+}
+
+.exhibition_img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exhibition_item_spices {
+  background-image: url("img/etc/spice.jpg");
+}
+
+.exhibition_item_grains {
+  background-image: url("img/grain/grains.jpg");
+}
+
+.exhibition_item_tea {
+  background-image: url("img/etc/tea2.jpg");
+  background-position: center;
+}
+
+.exhibition_title {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.exhibition_title > span {
+  display: block;
+  font-size: 15px;
+}
+
+.exhibition_title_grains {
+  top: 20px;
+  bottom: 0;
+  right: -20px;
+  color: rgb(88, 61, 42);
+  text-align: left;
+}
+
+/***footer***/
+
+footer {
+  background-color: rgb(234, 243, 234);
+  font-family: "Roboto", sans-serif;
+}
+
+.footer_contents_list {
+  width: 100%;
+  padding: 10px;
+}
+
+.footer_contents_item {
+  width: 25%;
+  background-color: white;
+}
+
+.footer_content {
+  display: block;
+  width: 100%;
+  padding: 17px 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer_terms_list {
+  width: 100%;
+}
+
+.footer_terms_item {
+  width: 25%;
+}
+
+.footer_terms {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer_logo {
+  padding: 40px 0 20px 0;
+  color: darkseagreen;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
 }
