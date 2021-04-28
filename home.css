@@ -39,6 +39,7 @@ li {
 /****/
 .wrapper {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .contents_container {
