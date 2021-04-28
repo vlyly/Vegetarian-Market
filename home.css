@@ -193,6 +193,12 @@ li {
   margin-bottom: 70px;
 }
 
+.quickMenu li:nth-child(9),
+.quickMenu li:nth-child(10),
+.quickMenu li:nth-child(11) {
+  display: none;
+}
+
 .quickMenu_item {
   display: block;
   width: 25%;
@@ -725,4 +731,20 @@ footer {
   font-size: 11px;
   font-weight: 400;
   text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .quickMenu_item {
+    width: 20%;
+  }
+
+  .quickMenu li:nth-child(8) {
+    display: none;
+  }
+
+  .quickMenu li:nth-child(9),
+  .quickMenu li:nth-child(10),
+  .quickMenu li:nth-child(11) {
+    display: block;
+  }
 }
