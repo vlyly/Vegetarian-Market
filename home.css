@@ -135,6 +135,7 @@ li {
   position: relative;
   width: 400%;
   float: left;
+  transform: translate3d(-100vw, 0px, 0px);
 }
 
 .image_slide_list_item {
@@ -175,16 +176,18 @@ li {
 }
 
 .image_slide_control_container {
-  margin: 3px 0;
+  margin: 5px 0;
   text-align: right;
 }
 
 .button_image_slide_control:last-of-type {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .button_image_slide_control {
+  width: 25px;
   color: darkseagreen;
+  font-size: 18px;
 }
 
 .button_image_slide_control:hover {
@@ -425,12 +428,12 @@ li {
 }
 
 .banner_first {
-  background-image: url("https://k-kininaru.com/wp-content/uploads/2016/12/lsj01.jpg");
-  background-position-y: 25%;
+  background-image: url("img/banner01.jpg");
+  background-position-y: 55%;
 }
 
 .banner_second {
-  background-image: url("https://m1.daumcdn.net/cfile269/image/193AEE3E4FC795EC1AC116");
+  background-image: url("img/banner02.jpg");
   background-position-y: 15%;
 }
 
