@@ -50,7 +50,7 @@
                                     <li id="slide_list_item04" class="image_slide_list_item"><img class="slide_image" src="img/sprout.jpg" alt="non genetic modification"/><div class="slide_description">Lorem ipsum dolor,</br> sit amet consectetur adipisicing elit.</div></li>
                                 </ul>
                             </div>
-                            <div class="button_container">
+                            <div class="image_slide_control_container">
                                 <button id="button_prev" class="button_image_slide_control" type="button" aria-label="show previous image"><i class="fas fa-chevron-left"></i></button>
                                 <button id="button_next" class="button_image_slide_control" type="button" aria-label="show next image"><i class="fas fa-chevron-right"></i></button>
                             </div>
@@ -68,34 +68,41 @@
                             <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_icon quickMenu_item_icon_recipe"><i class="fas fa-book-open"></i></div><div class="quickMenu_item_name">레시피</div></a></li>
                             <li class="quickMenu_item"><a class="quickMenu_item_anchor" href="#"><div class="quickMenu_item_icon quickMenu_item_icon_inquiry"><i class="fas fa-question"></i></div><div class="quickMenu_item_name">문의하기</div></a></li>
                         </ul>
-                        <div class="time_sale_items_container">
-                            <a class="item_anchor time_sale_item" href="#">
-                                <div class="time_sale_item_image_count_container">
-                                    <div class="time_sale_item_image_box">
-                                        <img class="time_sale_item_img" src="img/etc/cookie.jpg" alt="cookie"/>
-                                    </div>
-                                    <div class="time_sale_count"><strong id="time_sale_count_timer1">00:00:00</strong><span>남음</span></div>
-                                </div>
-                                <div class="time_sale_item_description">
-                                    <h3 class="time_sale_item_name">[신림 차차네 빵집] 피스타치오 쿠키 400g</h3>
-                                    <p class="time_sale_item_price"><span class="time_sale_item_discount_rate">30%</span><strong class="discount_price">4,760원</strong><span class="original_price">6,800원</span></p>
-                                </div>
-                            </a>
-                            <a class="item_anchor time_sale_item" href="#">
-                                <div class="time_sale_item_image_count_container">
-                                    <div class="time_sale_item_image_box">
-                                        <img class="time_sale_item_img" src="img/etc/tomato chilli sauce.jpg" alt="cookie"/>
-                                    </div>
-                                    <div id="time_sale_count2" class="time_sale_count"><strong id="time_sale_count_timer2">00:00:00</strong><span>남음</span></div>
-                                </div>
-                                <div class="time_sale_item_description">
-                                    <h3 class="time_sale_item_name">[인터밀란] 토마토 칠리 소스 350g</h3>
-                                    <p class="time_sale_item_price"><span class="time_sale_item_discount_rate">27%</span><strong class="discount_price">3,870원</strong><span class="original_price">5,300원</span></p>
-                                </div>
-                            </a>
+                        <div class="time_sale_sec">
+                            <h3 class="sec_title">타임세일</h3>
+                            <ul class="time_sale_item_list">
+                                <li class="time_sale_item">
+                                    <a class="item_anchor" href="#">
+                                        <div class="time_sale_item_image_count_container">
+                                            <div class="time_sale_item_image_box">
+                                                <img class="time_sale_item_img" src="img/etc/cookie.jpg" alt="cookie"/>
+                                            </div>
+                                            <div class="time_sale_count"><strong id="time_sale_count_timer1"></strong><span>남음</span></div>
+                                        </div>
+                                        <div class="time_sale_item_description">
+                                            <h3 class="time_sale_item_name">[신림 차차네 빵집] 피스타치오 쿠키 400g</h3>
+                                            <p class="time_sale_item_price"><span class="time_sale_item_discount_rate">30%</span><strong class="discount_price">4,760원</strong><span class="original_price">6,800원</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="time_sale_item">
+                                    <a class="item_anchor time_sale_item" href="#">
+                                        <div class="time_sale_item_image_count_container">
+                                            <div class="time_sale_item_image_box">
+                                                <img class="time_sale_item_img" src="img/etc/tomato chilli sauce.jpg" alt="cookie"/>
+                                            </div>
+                                            <div id="time_sale_count2" class="time_sale_count"><strong id="time_sale_count_timer2"></strong><span>남음</span></div>
+                                        </div>
+                                        <div class="time_sale_item_description">
+                                            <h3 class="time_sale_item_name">[인터밀란] 토마토 칠리 소스 350g</h3>
+                                            <p class="time_sale_item_price"><span class="time_sale_item_discount_rate">27%</span><strong class="discount_price">3,870원</strong><span class="original_price">5,300원</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="ad display_flex">
-                            <li class="ad_item">
+                        <ul class="ad_list display_flex">
+                            <li class="ad">
                                 <div class="ad_img ad_first">
                                     <i class="fas fa-ad"></i>
                                 </div>
@@ -108,7 +115,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="ad_item">
+                            <li class="ad">
                                 <div class="ad_img ad_second">
                                     <i class="fas fa-ad"></i>
                                 </div>
@@ -122,509 +129,580 @@
                                 </div>
                             </li>
                         </ul>
-                        <ul class="special_price_item_list">
-                            <li class="special_price_item">
-                                <a class="item_anchor position_relative" href="#">
-                                    <div class="special_price_item_discount_rate">15%</div>
-                                    <div class="special_price_item_image_box">
-                                        <img class="special_price_item_img " src="img/fruits/blueberry.jpg" alt="blueberry"/>
-                                    </div>
-                                    <div class="item_description">
-                                        <h5 class="special_price_item_name">친환경 블루베리 100g</h5>
-                                        <p class="special_price_item_price"><strong class="special_price_item_discount_price">7,480원</strong><span class="special_price_item_original_price">8,800원</span></p>
-                                        <div class="item_review">
-                                            <span>4.9(117)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="special_price_item">
-                                <a class="item_anchor position_relative" href="#">
-                                    <div class="special_price_item_discount_rate">22%</div>
-                                    <div class="special_price_item_image_box">
-                                        <img class="special_price_item_img " src="img/vegetable/potato.jpg" alt="potato"/>
-                                    </div>
-                                    <div class="item_description">
-                                        <h5 class="special_price_item_name">고랭지 감자 2kg</h5>
-                                        <p class="special_price_item_price"><strong class="special_price_item_discount_price">8,580원</strong><span class="special_price_item_original_price">11,000원</span></p>
-                                        <div class="item_review">
-                                            <span>4.8(96)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="special_price_item">
-                                <a class="item_anchor position_relative" href="#">
-                                    <div class="special_price_item_discount_rate">20%</div>
-                                    <div class="special_price_item_image_box">
-                                        <img class="special_price_item_img " src="img/fruits/tomato.jpg" alt="tomato"/>
-                                    </div>
-                                    <div class="item_description">
-                                        <h5 class="special_price_item_name">대저 토마토 800g</h5>
-                                        <p class="special_price_item_price"><strong class="special_price_item_discount_price">7,160원</strong><span class="special_price_item_original_price">8,960원</span></p>
-                                        <div class="item_review">
-                                            <span>4.7(90)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="special_price_item">
-                                <a class="item_anchor position_relative" href="#">
-                                    <div class="special_price_item_discount_rate">17%</div>
-                                    <div class="special_price_item_image_box">
-                                        <img class="special_price_item_img " src="img/etc/oil.jpg" alt="oil"/>
-                                    </div>
-                                    <div class="item_description">
-                                        <h5 class="special_price_item_name">그리스 올리브 오일(Cold press, Extra virgin) 500ml</h5>
-                                        <p class="special_price_item_price"><strong class="special_price_item_discount_price">5,060원</strong><span class="special_price_item_original_price">6,100원</span></p>
-                                        <div class="item_review">
-                                            <span>4.9(1,715)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="special_price_item">
-                                <a class="item_anchor position_relative" href="#">
-                                    <div class="special_price_item_discount_rate">11%</div>
-                                    <div class="special_price_item_image_box">
-                                        <img class="special_price_item_img " src="img/grain/flour.jpg" alt="flour"/>
-                                    </div>
-                                    <div class="item_description">
-                                        <h5 class="special_price_item_name">참새방앗간 밀가루 1kg</h5>
-                                        <p class="special_price_item_price"><strong class="special_price_item_discount_price">4,000원</strong><span class="special_price_item_original_price">4,500원</span></p>
-                                        <div class="item_review">
-                                            <span>5.0(660)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="special_price_item">
-                                <a class="item_anchor position_relative" href="#">
-                                    <div class="special_price_item_discount_rate">15%</div>
-                                    <div class="special_price_item_image_box">
-                                        <img class="special_price_item_img " src="img/fruits/coconut.jpg" alt="coconut"/>
-                                    </div>
-                                    <div class="item_description">
-                                        <h5 class="special_price_item_name">필리핀 코코넛</h5>
-                                        <p class="special_price_item_price"><strong class="special_price_item_discount_price">2,550원</strong><span class="special_price_item_original_price">3,000원</span></p>
-                                        <div class="item_review">
-                                            <span>4.6(21)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="banner_img banner_first"></div>
-                        <!-- <div class="banner">
-                            <div class="banner_img banner_first"></div>
-                            <div class="banner_img banner_second"></div>
-                            <div class="banner_img banner_third"></div>
-                        </div> -->
-                        <ul class="payment_promotion display_flex">
-                            <li class="payment_promotion_item display_flex kbCard">
-                                <img class="payment_logo" src="img/payment_icon/kbCard.png" alt="payment icon"/>
-                                <div class="payment_name">국민카드</div>
-                                <div class="discount_range"><span class="font_small">최대</br></span> 1만원</div>
-                            </li>
-                            <li class="payment_promotion_item display_flex shinhanCard">
-                                <img class="payment_logo" src="img/payment_icon/shinhanCard.png" alt="payment icon"/>
-                                <div class="payment_name">신한카드</div>
-                                <div class="discount_range"><span class="font_small">최대</br></span> 3만원</div>
-                            </li>
-                            <li class="payment_promotion_item display_flex bc">
-                                <img class="payment_logo" src="img/payment_icon/bc.png" alt="payment icon"/>
-                                <div class="payment_name">BC카드</div>
-                                <div class="discount_range"><span class="font_small">최대</br></span> 3만원</div>
-                            </li>
-                            <li class="payment_promotion_item display_flex nonghyup">
-                                <img class="payment_logo" src="img/payment_icon/nonghyup.png" alt="payment icon"/>
-                                <div class="payment_name">농협카드</div>
-                                <div class="discount_range">~3%</div>
-                            </li>
-                            <li class="payment_promotion_item display_flex kakaoPay">
-                                <img class="payment_logo landscape_logo" src="img/payment_icon/kakaoPay.png" alt="payment icon"/>
-                                <div class="payment_name">카카오페이</div>
-                                <div class="discount_range">~3%</div>
-                            </li>
-                            <li class="payment_promotion_item display_flex Npay">
-                                <img class="payment_logo landscape_logo" src="img/payment_icon/Npay.png" alt="payment icon"/>
-                                <div class="payment_name">네이버페이</div>
-                                <div class="discount_range">~5%</div>
-                            </li>
-                        </ul>
-                        <div class="item_slide_container">
-                            <ul class="best_seller display_flex">
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/lettuce.jpg" alt="lettuce"/>
+                        <div class="special_price_sec">
+                            <h3 class="sec_title">특가상품</h3>
+                            <ul class="special_price_item_list">
+                                <li class="special_price_item">
+                                    <a class="item_anchor position_relative" href="#">
+                                        <div class="special_price_item_discount_rate">15%</div>
+                                        <div class="special_price_item_image_box">
+                                            <img class="special_price_item_img " src="img/fruits/blueberry.jpg" alt="blueberry"/>
                                         </div>
                                         <div class="item_description">
-                                            <h5 class="item_name">초록마을 양상추</h5>
-                                            <p class="item_price"><strong>3,500</strong><span class="price_font_small">원(개)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(1,024)</span>
+                                            <h5 class="special_price_item_name">친환경 블루베리 100g</h5>
+                                            <p class="special_price_item_price"><strong class="special_price_item_discount_price">7,480원</strong><span class="special_price_item_original_price">8,800원</span></p>
+                                            <div class="item_review" aria-hidden="true">
+                                                <span>4.9(117)</span>
                                             </div>
+                                            <span class="screenReader_only">별점 4.9점</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/peach.jpg" alt="peach"/>
+                                <li class="special_price_item">
+                                    <a class="item_anchor position_relative" href="#">
+                                        <div class="special_price_item_discount_rate">22%</div>
+                                        <div class="special_price_item_image_box">
+                                            <img class="special_price_item_img " src="img/vegetable/potato.jpg" alt="potato"/>
                                         </div>
                                         <div class="item_description">
-                                            <h5 class="item_name">고당도 천도복숭아</h5>
-                                            <p class="item_price"><strong>980</strong><span class="price_font_small">원(g)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.9(881)</span>
+                                            <h5 class="special_price_item_name">고랭지 감자 2kg</h5>
+                                            <p class="special_price_item_price"><strong class="special_price_item_discount_price">8,580원</strong><span class="special_price_item_original_price">11,000원</span></p>
+                                            <div class="item_review" aria-hidden="true">
+                                                <span>4.8(96)</span>
                                             </div>
+                                            <span class="screenReader_only">별점 4.8점</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/carrot.jpg" alt="carrot"/>
+                                <li class="special_price_item">
+                                    <a class="item_anchor position_relative" href="#">
+                                        <div class="special_price_item_discount_rate">20%</div>
+                                        <div class="special_price_item_image_box">
+                                            <img class="special_price_item_img " src="img/fruits/tomato.jpg" alt="tomato"/>
                                         </div>
                                         <div class="item_description">
-                                            <h5 class="item_name">제주 세척 당근</h5>
-                                            <p class="item_price"><strong>350</strong><span class="price_font_small">원(g)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(630)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/strawberry.jpg" alt="raspberry"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">설향 딸기</h5>
-                                            <p class="item_price"><strong>11,200</strong><span class="price_font_small">원(팩)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.7(521)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/onion.jpg" alt="mushroom"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">적색 햇양파(중) 700g</h5>
-                                            <p class="item_price"><strong>3,750</strong><span class="price_font_small">원(망)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.9(390)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/grain/lentils.jpg" alt="lentils"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">렌틸콩 400g</h5>
-                                            <p class="item_price"><strong>5,500</strong><span class="price_font_small">원(봉)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(301)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="item_slide_container best_seller_themes_container">
-                            <div class="best_seller_themes_control_container">
-                                <button id="button_twenty_likes" class="best_seller_control_button button_twenty_likes button_twenty_likes_selected" type="button">#20대가 좋아하는</button>
-                                <button id="button_bbq_items" class="best_seller_control_button button_bbq_items" type="button">#바베큐 필수템</button>
-                                <button id="button_fresh_morning" class="best_seller_control_button button_fresh_morning" type="button">#산뜻한 아침</button>
-                            </div>
-                            <ul id="twenty_likes_item_list" class="best_seller display_flex">
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/raspberry.jpg" alt="raspberry"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">칠레산 라즈베리 500g</h5>
-                                            <p class="item_price"><strong>7,980</strong><span class="price_font_small">원(팩)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(87)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/lime.jpg" alt="lime"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">델몬트 라임</h5>
-                                            <p class="item_price"><strong>860</strong><span class="price_font_small">원(개)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.7(211)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/etc/random tea.jpg" alt="tea"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">오늘의 차(15입)</h5>
-                                            <p class="item_price"><strong>6,600</strong><span class="price_font_small">원(상자)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.9(89)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/grain/oat.jpg" alt="oat"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">오트 500g</h5>
-                                            <p class="item_price"><strong>5,100</strong><span class="price_font_small">원(봉)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(102)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/etc/bread.jpg" alt="bread"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">우리밀 비건 바게트 320g</h5>
-                                            <p class="item_price"><strong>4,000</strong><span class="price_font_small">원(봉)</sapn></p>
-                                            <div class="item_review">
-                                                <span>5.0(36)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/radish.jpg" alt="radish"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">세척 순무 300g</h5>
-                                            <p class="item_price"><strong>3,200</strong><span class="price_font_small">원(단)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.6(11)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul id="bbq_items_item_list" class="best_seller display_flex display_none">
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/grain/corn.jpg" alt="corn"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">완주 찰옥수수 2kg</h5>
-                                            <p class="item_price"><strong>15,700</strong><span class="price_font_small">원(자루)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.9(756)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/mushroom.jpg" alt="mushroom"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">부드러운 양송이 320g</h5>
-                                            <p class="item_price"><strong>2,780</strong><span class="price_font_small">원(팩)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(1,390)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/bell pepper.jpg" alt="bell pepper"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">아삭이 파프리카</h5>
-                                            <p class="item_price"><strong>850</strong><span class="price_font_small">원(개)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.7(59)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/pineapple.jpg" alt="pineapple"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">DOLE 파인애플</h5>
-                                            <p class="item_price"><strong>4,320</strong><span class="price_font_small">원(개)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.6(327)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/sweet potato.jpg" alt="sweet potato"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">달콤 밤고구마 3kg</h5>
-                                            <p class="item_price"><strong>23,000</strong><span class="price_font_small">원(상자)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.9(2,136)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/vegetable/galric.jpg" alt="garlic"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">의령 마늘</h5>
-                                            <p class="item_price"><strong>14,100</strong><span class="price_font_small">원(접)</sapn></p>
-                                            <div class="item_review">
-                                                <span>5.0(2,089)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul id="fresh_morning_item_list" class="best_seller display_flex display_none">
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/etc/coffee.jpg" alt="coffee"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">자메이카 블루마운틴 100% 싱글 오리진 프리미엄(드립백 5입)</h5>
-                                            <p class="item_price"><strong>22,000</strong><span class="price_font_small">원(상자)</sapn></p>
-                                            <div class="item_review">
-                                                <span>5.0(1,209)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/etc/cereal.jpg" alt="cereal"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">오븐에 구운 씨리얼 300g</h5>
-                                            <p class="item_price"><strong>6,910</strong><span class="price_font_small">원(상자)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(1,011)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/avocado.jpg" alt="avocado"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">미국산 아보카도</h5>
-                                            <p class="item_price"><strong>900</strong><span class="price_font_small">원(개)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.8(87)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/fruits/apple.jpg" alt="apple"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">상주 사과 5kg</h5>
-                                            <p class="item_price"><strong>33,300</strong><span class="price_font_small">원(상자)</sapn></p>
-                                            <div class="item_review">
-                                                <span>4.7(127)</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/etc/soybean milk.jpg" alt="soybean milk"/>
-                                        </div>
-                                        <div class="item_description">
-                                            <h5 class="item_name">유기농 두유 900ml</h5>
-                                            <p class="item_price"><strong>3,700</strong><span class="price_font_small">원(팩)</sapn></p>
-                                            <div class="item_review">
+                                            <h5 class="special_price_item_name">대저 토마토 800g</h5>
+                                            <p class="special_price_item_price"><strong class="special_price_item_discount_price">7,160원</strong><span class="special_price_item_original_price">8,960원</span></p>
+                                            <div class="item_review" aria-hidden="true">
                                                 <span>4.7(90)</span>
                                             </div>
+                                            <span class="screenReader_only">별점 4.7점</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="best_seller_item">
-                                    <a class="item_anchor" href="#">
-                                        <div class="image_box">
-                                            <img class="best_seller_item_img " src="img/etc/granola.jpg" alt="granola"/>
+                                <li class="special_price_item">
+                                    <a class="item_anchor position_relative" href="#">
+                                        <div class="special_price_item_discount_rate">17%</div>
+                                        <div class="special_price_item_image_box">
+                                            <img class="special_price_item_img " src="img/etc/oil.jpg" alt="oil"/>
                                         </div>
                                         <div class="item_description">
-                                            <h5 class="item_name">믹스 그래놀라 350g</h5>
-                                            <p class="item_price"><strong>5,970</strong><span class="price_font_small">원(상자)</sapn></p>
-                                            <div class="item_review">
-                                                <span>5.0(92)</span>
+                                            <h5 class="special_price_item_name">그리스 올리브 오일(Cold press, Extra virgin) 500ml</h5>
+                                            <p class="special_price_item_price"><strong class="special_price_item_discount_price">5,060원</strong><span class="special_price_item_original_price">6,100원</span></p>
+                                            <div class="item_review" aria-hidden="true">
+                                                <span>4.9(1,715)</span>
                                             </div>
+                                            <span class="screenReader_only">별점 4.9점</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="special_price_item">
+                                    <a class="item_anchor position_relative" href="#">
+                                        <div class="special_price_item_discount_rate">11%</div>
+                                        <div class="special_price_item_image_box">
+                                            <img class="special_price_item_img " src="img/grain/flour.jpg" alt="flour"/>
+                                        </div>
+                                        <div class="item_description">
+                                            <h5 class="special_price_item_name">참새방앗간 밀가루 1kg</h5>
+                                            <p class="special_price_item_price"><strong class="special_price_item_discount_price">4,000원</strong><span class="special_price_item_original_price">4,500원</span></p>
+                                            <div class="item_review" aria-hidden="true">
+                                                <span>5.0(660)</span>
+                                            </div>
+                                            <span class="screenReader_only">별점 5.0점</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="special_price_item">
+                                    <a class="item_anchor position_relative" href="#">
+                                        <div class="special_price_item_discount_rate">15%</div>
+                                        <div class="special_price_item_image_box">
+                                            <img class="special_price_item_img " src="img/fruits/coconut.jpg" alt="coconut"/>
+                                        </div>
+                                        <div class="item_description">
+                                            <h5 class="special_price_item_name">필리핀 코코넛</h5>
+                                            <p class="special_price_item_price"><strong class="special_price_item_discount_price">2,550원</strong><span class="special_price_item_original_price">3,000원</span></p>
+                                            <div class="item_review" aria-hidden="true">
+                                                <span>4.6(21)</span>
+                                            </div>
+                                            <span class="screenReader_only">별점 4.6점</span>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                        <div class="banner_img banner_first"></div>
+                        <div class="payment_promotion_sec">
+                            <h3 class="sec_title">할인 프로모션</h3>
+                            <ul class="payment_promotion_list display_flex">
+                                <li class="payment_promotion_item display_flex kbCard">
+                                    <img class="payment_logo" src="img/payment_icon/kbCard.png" alt="payment icon"/>
+                                    <div class="payment_name">국민카드</div>
+                                    <div class="discount_range"><span class="font_small">최대</br></span> 1만원</div>
+                                </li>
+                                <li class="payment_promotion_item display_flex shinhanCard">
+                                    <img class="payment_logo" src="img/payment_icon/shinhanCard.png" alt="payment icon"/>
+                                    <div class="payment_name">신한카드</div>
+                                    <div class="discount_range"><span class="font_small">최대</br></span> 3만원</div>
+                                </li>
+                                <li class="payment_promotion_item display_flex bc">
+                                    <img class="payment_logo" src="img/payment_icon/bc.png" alt="payment icon"/>
+                                    <div class="payment_name">BC카드</div>
+                                    <div class="discount_range"><span class="font_small">최대</br></span> 3만원</div>
+                                </li>
+                                <li class="payment_promotion_item display_flex nonghyup">
+                                    <img class="payment_logo" src="img/payment_icon/nonghyup.png" alt="payment icon"/>
+                                    <div class="payment_name">농협카드</div>
+                                    <div class="discount_range">~3%</div>
+                                </li>
+                                <li class="payment_promotion_item display_flex kakaoPay">
+                                    <img class="payment_logo landscape_logo" src="img/payment_icon/kakaoPay.png" alt="payment icon"/>
+                                    <div class="payment_name">카카오페이</div>
+                                    <div class="discount_range">~3%</div>
+                                </li>
+                                <li class="payment_promotion_item display_flex Npay">
+                                    <img class="payment_logo landscape_logo" src="img/payment_icon/Npay.png" alt="payment icon"/>
+                                    <div class="payment_name">네이버페이</div>
+                                    <div class="discount_range">~5%</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="best_seller_sec">
+                            <h3 class="sec_title">화제의 상품</h3>
+                            <div class="item_slide_container">
+                                <ul class="item_slide display_flex">
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/lettuce.jpg" alt="lettuce"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">초록마을 양상추</h5>
+                                                <p class="item_price"><strong>3,500</strong><span class="price_font_small">원(개)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(1,024)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/peach.jpg" alt="peach"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">고당도 천도복숭아</h5>
+                                                <p class="item_price"><strong>980</strong><span class="price_font_small">원(g)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.9(881)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.9점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/carrot.jpg" alt="carrot"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">제주 세척 당근</h5>
+                                                <p class="item_price"><strong>350</strong><span class="price_font_small">원(g)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(630)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/strawberry.jpg" alt="raspberry"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">설향 딸기</h5>
+                                                <p class="item_price"><strong>11,200</strong><span class="price_font_small">원(팩)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.7(521)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.7점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/onion.jpg" alt="mushroom"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">적색 햇양파(중) 700g</h5>
+                                                <p class="item_price"><strong>3,750</strong><span class="price_font_small">원(망)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.9(390)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.9점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/grain/lentils.jpg" alt="lentils"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">렌틸콩 400g</h5>
+                                                <p class="item_price"><strong>5,500</strong><span class="price_font_small">원(봉)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(301)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recommend_sec">
+                            <h3 class="sec_title">테마별 추천 상품</h3>
+                            <div class="item_slide_container recommend_themes_container">
+                                <div class="recommend_themes_control_container">
+                                    <button id="button_twenty_likes" class="recommend_control_button button_twenty_likes button_twenty_likes_selected" type="button">#20대가 좋아하는</button>
+                                    <button id="button_bbq_items" class="recommend_control_button button_bbq_items" type="button">#바베큐 필수템</button>
+                                    <button id="button_fresh_morning" class="recommend_control_button button_fresh_morning" type="button">#산뜻한 아침</button>
+                                </div>
+                                <ul id="twenty_likes_item_list" class="item_slide display_flex">
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/raspberry.jpg" alt="raspberry"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">칠레산 라즈베리 500g</h5>
+                                                <p class="item_price"><strong>7,980</strong><span class="price_font_small">원(팩)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(87)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/lime.jpg" alt="lime"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">델몬트 라임</h5>
+                                                <p class="item_price"><strong>860</strong><span class="price_font_small">원(개)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.7(211)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.7점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/etc/random tea.jpg" alt="tea"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">오늘의 차(15입)</h5>
+                                                <p class="item_price"><strong>6,600</strong><span class="price_font_small">원(상자)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.9(89)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.9점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/grain/oat.jpg" alt="oat"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">오트 500g</h5>
+                                                <p class="item_price"><strong>5,100</strong><span class="price_font_small">원(봉)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(102)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/etc/bread.jpg" alt="bread"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">우리밀 비건 바게트 320g</h5>
+                                                <p class="item_price"><strong>4,000</strong><span class="price_font_small">원(봉)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>5.0(36)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 5.0점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/radish.jpg" alt="radish"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">세척 순무 300g</h5>
+                                                <p class="item_price"><strong>3,200</strong><span class="price_font_small">원(단)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.6(11)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.6점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul id="bbq_items_item_list" class="item_slide display_flex display_none">
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/grain/corn.jpg" alt="corn"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">완주 찰옥수수 2kg</h5>
+                                                <p class="item_price"><strong>15,700</strong><span class="price_font_small">원(자루)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.9(756)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.9점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/mushroom.jpg" alt="mushroom"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">부드러운 양송이 320g</h5>
+                                                <p class="item_price"><strong>2,780</strong><span class="price_font_small">원(팩)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(1,390)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/bell pepper.jpg" alt="bell pepper"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">아삭이 파프리카</h5>
+                                                <p class="item_price"><strong>850</strong><span class="price_font_small">원(개)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.7(59)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.7점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/pineapple.jpg" alt="pineapple"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">DOLE 파인애플</h5>
+                                                <p class="item_price"><strong>4,320</strong><span class="price_font_small">원(개)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.6(327)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.6점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/sweet potato.jpg" alt="sweet potato"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">달콤 밤고구마 3kg</h5>
+                                                <p class="item_price"><strong>23,000</strong><span class="price_font_small">원(상자)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.9(2,136)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.9점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/vegetable/galric.jpg" alt="garlic"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">의령 마늘</h5>
+                                                <p class="item_price"><strong>14,100</strong><span class="price_font_small">원(접)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>5.0(2,089)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 5.0점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul id="fresh_morning_item_list" class="item_slide display_flex display_none">
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/etc/coffee.jpg" alt="coffee"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">자메이카 블루마운틴 100% 싱글 오리진 프리미엄(드립백 5입)</h5>
+                                                <p class="item_price"><strong>22,000</strong><span class="price_font_small">원(상자)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>5.0(1,209)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 5.0점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/etc/cereal.jpg" alt="cereal"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">오븐에 구운 씨리얼 300g</h5>
+                                                <p class="item_price"><strong>6,910</strong><span class="price_font_small">원(상자)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(1,011)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/avocado.jpg" alt="avocado"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">미국산 아보카도</h5>
+                                                <p class="item_price"><strong>900</strong><span class="price_font_small">원(개)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.8(87)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.8점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/fruits/apple.jpg" alt="apple"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">상주 사과 5kg</h5>
+                                                <p class="item_price"><strong>33,300</strong><span class="price_font_small">원(상자)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.7(127)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.7점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/etc/soybean milk.jpg" alt="soybean milk"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">유기농 두유 900ml</h5>
+                                                <p class="item_price"><strong>3,700</strong><span class="price_font_small">원(팩)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>4.7(90)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 4.7점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item_slide_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="image_box">
+                                                <img class="item_slide_item_img" src="img/etc/granola.jpg" alt="granola"/>
+                                            </div>
+                                            <div class="item_description">
+                                                <h5 class="item_name">믹스 그래놀라 350g</h5>
+                                                <p class="item_price"><strong>5,970</strong><span class="price_font_small">원(상자)</sapn></p>
+                                                <div class="item_review" aria-hidden="true">
+                                                    <span>5.0(92)</span>
+                                                </div>
+                                                <span class="screenReader_only">별점 5.0점</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="banner_img banner_second"></div>
-                        <div class="exhibition_container">
-                            <a class="item_anchor position_relative" href="#">
-                                <div class="exhibition_item_box">
-                                    <div class="exhibition_img exhibition_item_spices"></div>
-                                    <p class="exhibition_title">오리엔탈 향신료</br>선택 세트 판매<span>04.13 ~ 04.30</span></p>
-                                </div>
-                            </a>
-                            <a class="item_anchor position_relative" href="#">
-                                <div class="exhibition_item_box">
-                                    <div class="exhibition_img exhibition_item_grains"></div>
-                                    <p class="exhibition_title exhibition_title_grains">햇곡물 12종<span>04.20 ~ 05.20</span></p>
-                                </div>
-                            </a>
-                            <a class="item_anchor" href="#">
-                                <div class="exhibition_item_box">
-                                    <div class="exhibition_img exhibition_item_tea"></div>
-                                    <p class="exhibition_title">English Tea</br>기획전<span>04.24 ~ 05.04</span></p>
-                                </div>
-                            </a>
+                        <div class="exhibition_sec">
+                            <h3 class="sec_title">기획전</h3>
+                            <div class="exhibition_container">
+                                <a class="item_anchor position_relative" href="#">
+                                    <div class="exhibition_item_box">
+                                        <div class="exhibition_img exhibition_item_spices"></div>
+                                        <p class="exhibition_title">오리엔탈 향신료</br>선택 세트 판매<span>04.13 ~ 04.30</span></p>
+                                    </div>
+                                </a>
+                                <a class="item_anchor position_relative" href="#">
+                                    <div class="exhibition_item_box">
+                                        <div class="exhibition_img exhibition_item_grains"></div>
+                                        <p class="exhibition_title exhibition_title_grains">햇곡물 12종<span>04.20 ~ 05.20</span></p>
+                                    </div>
+                                </a>
+                                <a class="item_anchor" href="#">
+                                    <div class="exhibition_item_box">
+                                        <div class="exhibition_img exhibition_item_tea"></div>
+                                        <p class="exhibition_title">English Tea</br>기획전<span>04.24 ~ 05.04</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recipe_sec position_relative">
+                            <h3 class="sec_title">베·마의 Recipe</h3>
+                            <div class="recipe_control_button_container display_flex">
+                                <button id="recipe_prev_button" class="recipe_control_button" type="button"><i class="fas fa-chevron-left"></i></button>
+                                <button id="recipe_next_button" class="recipe_control_button" type="button"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="recipe_slide_container">
+                                <ul id="recipe_slide_item_list" class="recipe_slide_item_list display_flex position_relative">
+                                    <li id="recipe_item01" class="recipe_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="recipe_img recipe01"></div>
+                                        </a>
+                                    </li>
+                                    <li id="recipe_item02" class="recipe_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="recipe_img recipe recipe02"></div>
+                                        </a>
+                                    </li>
+                                    <li id="recipe_item03" class="recipe_item">
+                                        <a class="item_anchor" href="#">
+                                            <div class="recipe_img recipe recipe03"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="recipe_index_container" class="recipe_index_container">
+                                <i id="recipt_index01" class="fas fa-circle"></i>
+                                <i id="recipt_index02" class="far fa-circle"></i>
+                                <i id="recipt_index03" class="far fa-circle"></i>
+                            </div>
                         </div>
                     </div>
                 </main>
@@ -648,5 +726,6 @@
         <script type="text/javascript" src="home.js"></script>
         <script type="text/javascript" src="countDown.js"></script>
         <script type="text/javascript" src="imageSlide.js"></script>
+        <script type="text/javascript" src="recipeSlide.js"></script>
     </body>
 </html>

@@ -87,6 +87,10 @@ li {
   font-size: 15px;
 }
 
+.user_search_button {
+  font-size: 15px;
+}
+
 /***main***/
 
 .main_container {
@@ -170,7 +174,7 @@ li {
     1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.button_container {
+.image_slide_control_container {
   margin: 3px 0;
   text-align: right;
 }
@@ -209,18 +213,6 @@ li {
   width: fit-content;
   margin: 0 auto 10px auto;
 }
-
-/* .quickMenu_item_img {
-  display: block;
-  width: 46px;
-  height: 46px;
-  margin: 0 auto 5px auto;
-  border-radius: 23px;
-  background-position: center;
-  background-size: cover;
-  font-size: 20px;
-  text-align: center;
-} */
 
 .quickMenu_item_icon {
   display: block;
@@ -299,13 +291,88 @@ li {
   text-align: center;
 }
 
-.ad {
+.sec_title {
+  margin: 10px 0 15px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.time_sale_item_list {
+  margin-bottom: 70px;
+}
+
+.time_sale_item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.time_sale_item_image_count_container {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  margin-bottom: 10px;
+  overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.time_sale_item_img {
+  width: 100%;
+}
+
+.time_sale_count {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 7px 0;
+  background-color: rgba(49, 34, 22, 0.5);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.time_sale_count > strong {
+  font-size: 22px;
+  letter-spacing: 0.07em;
+}
+
+.time_sale_count > span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.time_sale_item_description {
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.time_sale_item_name {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.time_sale_item_price {
+  font-size: 17px;
+}
+
+.time_sale_item_discount_rate {
+  margin-right: 5px;
+  color: crimson;
+}
+
+.original_price {
+  margin-left: 5px;
+  color: gray;
+  font-size: 14px;
+  text-decoration: line-through 1px gray;
+}
+
+.ad_list {
   justify-content: space-between;
   margin: 0 10px 70px 10px;
   font-family: "Roboto", sans-serif;
 }
 
-.ad_item {
+.ad {
   width: 48%;
 }
 
@@ -363,9 +430,8 @@ li {
 }
 
 .banner_second {
-  background-image: url("https://www.veganfamilyrecipes.com/wp-content/uploads/2018/02/Creamy-Almond-Soup-Recipe-Vegan-1-of-7.jpg");
-  background-position: center;
-  /* background-color: lavenderblush; */
+  background-image: url("https://m1.daumcdn.net/cfile269/image/193AEE3E4FC795EC1AC116");
+  background-position-y: 15%;
 }
 
 .banner_third {
@@ -373,7 +439,7 @@ li {
   background-position-y: 15%;
 }
 
-.payment_promotion {
+.payment_promotion_list {
   margin: 0 10px 70px 10px;
   overflow-x: scroll;
 }
@@ -454,12 +520,12 @@ li {
   margin: 0 10px 70px 10px;
 }
 
-.best_seller {
+.item_slide {
   overflow-x: scroll;
   font-family: "Roboto", sans-serif;
 }
 
-.best_seller_item:not(:last-of-type) {
+.item_slide_item:not(:last-of-type) {
   margin-right: 10px;
 }
 
@@ -475,7 +541,7 @@ li {
   overflow: hidden;
 }
 
-.best_seller_item_img {
+.item_slide_item_img {
   width: 100%;
 }
 
@@ -516,11 +582,11 @@ li {
   color: rgb(196, 196, 196);
 }
 
-.best_seller_themes_control_container {
+.recommend_themes_control_container {
   margin-bottom: 15px;
 }
 
-.best_seller_control_button {
+.recommend_control_button {
   padding: 3px 4px;
   border-radius: 10px;
   font-size: 12px;
@@ -558,75 +624,6 @@ li {
 
 .display_none {
   display: none;
-}
-
-.time_sale_items_container {
-  margin-bottom: 70px;
-}
-
-.time_sale_item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.time_sale_item_image_count_container {
-  position: relative;
-  width: 100%;
-  height: 170px;
-  margin-bottom: 10px;
-  overflow-y: hidden;
-  font-family: "Roboto", sans-serif;
-}
-
-.time_sale_item_img {
-  width: 100%;
-}
-
-.time_sale_count {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 7px 0;
-  background-color: rgba(49, 34, 22, 0.5);
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  text-align: center;
-}
-
-.time_sale_count > strong {
-  font-size: 22px;
-  letter-spacing: 0.07em;
-}
-
-.time_sale_count > span {
-  margin-left: 5px;
-  font-size: 14px;
-}
-
-.time_sale_item_description {
-  margin: 0 10px;
-  font-family: "Roboto", sans-serif;
-}
-
-.time_sale_item_name {
-  margin-bottom: 7px;
-  font-size: 15px;
-}
-
-.time_sale_item_price {
-  font-size: 17px;
-}
-
-.time_sale_item_discount_rate {
-  margin-right: 5px;
-  color: crimson;
-}
-
-.original_price {
-  margin-left: 5px;
-  color: gray;
-  font-size: 14px;
-  text-decoration: line-through 1px gray;
 }
 
 .exhibition_container {
@@ -704,6 +701,11 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
+.special_price_item_list :nth-child(5),
+.special_price_item_list :nth-child(6) {
+  margin-bottom: 0;
+}
+
 .position_relative {
   position: relative;
 }
@@ -760,6 +762,61 @@ li {
   color: gray;
   font-size: 14px;
   text-decoration: line-through;
+}
+
+.recipe_control_button_container {
+  justify-content: space-between;
+  position: absolute;
+  top: 50%; /*추후 반드시 수정*/
+  width: 95%;
+  padding: 0 15px;
+}
+
+.recipe_control_button {
+  font-size: 27px;
+  color: darkseagreen;
+}
+
+.recipe_slide_container {
+  width: 50vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.recipe_slide_item_list {
+  width: 250vw;
+}
+
+.recipe_item {
+  flex-shrink: 0;
+  width: 50vw;
+}
+
+.recipe_img {
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recipe01 {
+  background-image: url("https://www.veganfamilyrecipes.com/wp-content/uploads/2018/02/Creamy-Almond-Soup-Recipe-Vegan-1-of-7.jpg");
+}
+
+.recipe02 {
+  background-image: url("http://tbc.imgdl.xcache.kinxcdn.com/cdn001/20181121/1807233160_1122_vege_5.jpg");
+}
+
+.recipe03 {
+  background-image: url("https://i.pinimg.com/736x/d5/b8/11/d5b8117d100a1ef754fd0fbd70f6d1a8.jpg");
+}
+
+.recipe_index_container {
+  margin: 8px 0;
+  font-size: 12px;
+  text-align: center;
+  color: lightgrey;
 }
 
 /***footer***/
@@ -826,5 +883,34 @@ footer {
   .quickMenu li:nth-child(10),
   .quickMenu li:nth-child(11) {
     display: block;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .topBar_item {
+    font-size: 22px;
+  }
+
+  .user_search_button {
+    font-size: 18px;
+  }
+
+  .banner_img {
+    height: 130px;
+  }
+
+  .special_price_item_discount_rate {
+    width: 45px;
+    height: 45px;
+    border-radius: 23px;
+    font-size: 17px;
+  }
+
+  .item_review {
+    font-size: 12.5px;
   }
 }
