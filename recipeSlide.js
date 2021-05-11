@@ -23,7 +23,7 @@ recipe_slide_item_list.style.transform = `translate3d(-${
 
 function go_prev() {
   recipeIndex--;
-  recipe_slide_item_list.style.transition = "500ms";
+  recipe_slide_item_list.style.transition = "300ms";
   recipe_slide_item_list.style.transform = `translate3d(-${
     screenWidth * 0.5 * recipeIndex
   }px, 0px, 0px)`;
@@ -37,7 +37,7 @@ function go_prev() {
       recipe_slide_item_list.style.transform = `translate3d(-${
         screenWidth * 1.5
       }px, 0px, 0px)`;
-    }, 501);
+    }, 301);
     recipe_index03.style.fontWeight = 900;
     recipeIndex = 3;
   } else {
@@ -47,7 +47,7 @@ function go_prev() {
 
 function go_next() {
   recipeIndex++;
-  recipe_slide_item_list.style.transition = "500ms";
+  recipe_slide_item_list.style.transition = "300ms";
   recipe_slide_item_list.style.transform = `translate3d(-${
     screenWidth * 0.5 * recipeIndex
   }px, 0px, 0px)`;
@@ -61,7 +61,7 @@ function go_next() {
       recipe_slide_item_list.style.transform = `translate3d(-${
         screenWidth * 0.5
       }px, 0px, 0px)`;
-    }, 501);
+    }, 301);
     recipe_index01.style.fontWeight = 900;
     recipeIndex = 1;
   } else {
