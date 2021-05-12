@@ -29,13 +29,17 @@ function imageSlide() {
   }
 }
 
-function slideToPrev(event) {
+function slideToPrev() {
   clearInterval(slide_interval);
   currentIndex--;
   image_slide_list.style.transition = "500ms";
   image_slide_list.style.transform = `translate3d(-${
     screenWidth * currentIndex
   }px, 0px, 0px)`;
+  button_prev.disabled = "true";
+  setTimeout(function () {
+    button_prev.disabled = "";
+  }, 501);
 
   if (currentIndex === 0) {
     setTimeout(function () {
@@ -43,6 +47,7 @@ function slideToPrev(event) {
       image_slide_list.style.transform = `translate3d(-${
         screenWidth * 4
       }px, 0px, 0px)`;
+      button_prev.disabled = "";
     }, 501);
     image_slide_list.style.transition = "500ms";
     currentIndex = 4;
@@ -57,11 +62,16 @@ function slideToNext() {
     screenWidth * (currentIndex + 1)
   }px, 0px, 0px)`;
   currentIndex++;
+  button_next.disabled = "true";
+  setTimeout(function () {
+    button_next.disabled = "";
+  }, 501);
 
   if (currentIndex === 5) {
     setTimeout(function () {
       image_slide_list.style.transition = "";
       image_slide_list.style.transform = `translate3d(-${screenWidth}px, 0px, 0px)`;
+      button_next.disabled = "";
     }, 501);
     image_slide_list.style.transition = "500ms";
     currentIndex = 1;
@@ -71,4 +81,3 @@ function slideToNext() {
 
 button_prev.addEventListener("click", slideToPrev);
 button_next.addEventListener("click", slideToNext);
-// setInterval(imageSlide, 6000);
