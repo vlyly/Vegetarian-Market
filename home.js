@@ -86,7 +86,6 @@ function itemListControl(event) {
 }
 
 function itemListControlPrevNext(event) {
-  console.log(event.target);
   if (event.target === best_seller_item_slide_prev_button) {
     best_seller_item_slide_list.scroll({ left: 0, behavior: "smooth" });
     best_seller_item_slide_prev_button.classList.add("display_none");
