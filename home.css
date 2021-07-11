@@ -139,7 +139,6 @@ li {
   position: relative;
   float: left;
   width: 400%;
-  /* transform: translate3d(-100vw, 0px, 0px); */
 }
 
 .image_slide_list_item {
@@ -1193,7 +1192,6 @@ footer {
     border: 3px solid white;
     border-radius: 25px;
     background-color: rgba(245, 222, 179, 0.8);
-    font-size: 20px;
     color: white;
   }
 
@@ -1205,8 +1203,26 @@ footer {
     left: -25px;
   }
 
+  .item_slide_control_prev_button::before {
+    display: block;
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 700;
+    content: "\f053";
+  }
+
   .item_slide_control_next_button {
     right: -25px;
+  }
+
+  .item_slide_control_next_button::before {
+    display: block;
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 700;
+    content: "\f054";
   }
 
   .display_none {
