@@ -37,9 +37,6 @@ li {
   display: none;
 }
 /****/
-.wrapper {
-  width: 100vw;
-}
 
 .contents_container {
   max-width: 960px;
@@ -54,7 +51,8 @@ li {
 .topBar_container {
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  padding: 20px;
+  width: 100%;
 }
 
 .topBar_logo {
@@ -67,6 +65,10 @@ li {
   padding: 0 7px;
   font-size: 18px;
   list-style: none;
+}
+
+.topBar_list_item:hover {
+  opacity: 0.5;
 }
 
 .searchBar_container {
@@ -108,12 +110,20 @@ li {
 .category_list_item_anchor {
   display: inline-block;
   width: 100%;
+  height: 51px;
   padding: 12px 0;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 13px;
 }
 
+.category_list_item_anchor:hover {
+  border-bottom: darkseagreen 3px solid;
+  color: darkseagreen;
+  font-weight: 700;
+}
+
 .category_list_item_selected {
+  height: 51px;
   border-bottom: darkseagreen 3px solid;
   color: darkseagreen;
   font-weight: 700;
@@ -296,7 +306,7 @@ li {
 }
 
 .sec_title {
-  margin: 10px 0 15px 10px;
+  margin: 0 0 15px 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
 }
@@ -417,7 +427,6 @@ li {
   height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 10px;
   font-family: "Noto Sans KR", sans-serif;
 }
 
