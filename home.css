@@ -8,6 +8,10 @@
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a,
 a:visited {
   color: inherit;
@@ -380,7 +384,7 @@ li {
 }
 
 .ad_list {
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -447,6 +451,11 @@ li {
 .payment_promotion_list {
   margin: 0 10px;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+}
+
+.payment_promotion_list::-webkit-scrollbar {
+  display: none;
 }
 
 .payment_promotion_list_item {
@@ -1069,11 +1078,6 @@ footer {
 
   .payment_promotion_list {
     justify-content: center;
-    -ms-overflow-style: none;
-  }
-
-  .payment_promotion_list::-webkit-scrollbar {
-    display: none;
   }
 
   .payment_promotion_list_item {
