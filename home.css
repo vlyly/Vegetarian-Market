@@ -8,10 +8,6 @@
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a,
 a:visited {
   color: inherit;
@@ -41,6 +37,9 @@ li {
   display: none;
 }
 /****/
+.wrapper {
+  overflow-x: hidden;
+}
 
 .contents_container {
   max-width: 960px;
@@ -61,7 +60,7 @@ li {
 
 .topBar_logo {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -402,6 +401,7 @@ li {
   text-align: right;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .ad_image > i {
@@ -535,9 +535,9 @@ li {
 }
 
 .item_slide_list {
-  width: 100%;
-  overflow-x: scroll;
+  margin: 0 10px;
   font-family: "Noto Sans KR", sans-serif;
+  overflow-x: scroll;
   -ms-overflow-style: none;
 }
 
@@ -566,7 +566,7 @@ li {
 }
 
 .item_slide_list_item_description {
-  width: 130px;
+  width: 100%;
 }
 
 .item_slide_list_item_name {
@@ -1108,6 +1108,10 @@ footer {
   .image_box {
     width: 200px;
     height: 200px;
+  }
+
+  .item_slide_list {
+    margin: 0;
   }
 
   .item_slide_list_item_description {
