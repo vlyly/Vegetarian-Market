@@ -1360,6 +1360,7 @@ footer {
   .footer_container_PC_ver {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 70%;
     margin: 0 auto;
     padding: 45px 0;
@@ -1376,11 +1377,6 @@ footer {
   .footer_container_PC_ver > address {
     font-size: 11px;
     font-style: normal;
-    height: 135px;
-  }
-
-  .footer_CS_center {
-    height: 135px;
   }
 
   .footer_CS_center > strong {
