@@ -974,11 +974,13 @@ footer {
     margin: 35px auto 10px auto;
   }
   .topBar_logo {
+    order: 1;
     width: 20%;
     font-size: 16px;
   }
 
   .topBar_menu_list {
+    order: 3;
     width: 15%;
   }
 
@@ -987,12 +989,18 @@ footer {
   }
 
   .topBar_search_container {
+    order: 2;
     width: 63%;
     margin-top: 0;
   }
 
   .topBar_search_button {
     font-size: 18px;
+  }
+
+  .recipe_control_button_container {
+    width: 80%;
+    margin: 0 10%;
   }
 }
 
@@ -1003,14 +1011,9 @@ footer {
   }
 
   .topBar_logo {
-    order: 1;
     width: 18%;
     font-size: 19px;
     text-align: center;
-  }
-
-  .topBar_menu_list {
-    order: 3;
   }
 
   .topBar_menu_list_item {
@@ -1018,7 +1021,6 @@ footer {
   }
 
   .topBar_search_container {
-    order: 2;
     width: 70%;
     padding: 5px 10px;
   }
@@ -1188,6 +1190,15 @@ footer {
 
   .recipe_slide_list_item_image {
     height: 200px;
+  }
+
+  .recipe_control_button_container {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .recipe_control_button {
+    font-size: 30px;
   }
 
   .footer_contents,
