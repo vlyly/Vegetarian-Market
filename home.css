@@ -42,13 +42,17 @@ li {
 }
 
 .contents_container {
-  max-width: 960px;
   margin: 0 auto;
 }
 
 /***header***/
 .display_flex {
   display: flex;
+}
+
+.header_container {
+  max-width: 968px;
+  margin: 0 auto;
 }
 
 .topBar_container {
@@ -105,6 +109,8 @@ li {
 
 .main_container {
   width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
 }
 
 .category_list_item {
@@ -844,11 +850,6 @@ footer {
   background-color: rgb(234, 243, 234);
   font-family: "Noto Sans KR", sans-serif;
 }
-/* .footer_container_mobile_ver,
-.footer_container_PC_ver {
-  background-color: rgb(234, 243, 234);
-  font-family: "Noto Sans KR", sans-serif;
-} */
 
 .footer_container_PC_ver {
   display: none;
@@ -1221,6 +1222,10 @@ footer {
     width: 67%;
   }
 
+  .image_slide_control_button {
+    font-size: 18px;
+  }
+
   .time_sale_list_item_image_count_container {
     height: 270px;
   }
@@ -1356,7 +1361,6 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 70%;
-    max-width: 968px;
     margin: 0 auto;
     padding: 45px 0;
     font-family: "Noto Sans KR", sans-serif;
