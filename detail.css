@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.screenReader_only {
+  display: none;
+}
+
+.display_flex {
+  display: flex;
+}
+
+.display_none {
+  display: none;
+}
+
+.position_relative {
+  position: relative;
+}
+
+/****/
+
+.topbar_container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.topbar_logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.topbar_list_item {
+  font-size: 18px;
+}
+
+.topbar_list_item > button {
+  font-size: 18px;
+}
+
+.title_section {
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.item_image {
+  width: 100%;
+  height: auto;
+}
+
+.item_description {
+  padding: 30px 25px 0 25px;
+}
+
+.item_description > h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.item_description > strong {
+  font-size: 21px;
+}
+
+.item_description > p {
+  color: darkseagreen;
+  font-size: 13px;
+  line-height: 1.8em;
+}
+
+.item_description_small_font {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.discount_promotion {
+  padding: 10px 25px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.discount_promotion_dropdown_button {
+  width: 15px;
+  margin: 5px 0 0 3px;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.item_delivery_info {
+  width: 90%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: darkseagreen;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.item_delivery_info > i {
+  color: lightpink;
+  font-size: 14px;
+}
+
+.item_delivery_info > i::before {
+  border-radius: 8px;
+  background-color: white;
+}
+
+.item_info_category_list {
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.item_info_category_list_item {
+  width: 25%;
+}
+
+.item_info_selected {
+  font-weight: 900;
+}
+
+.item_info_category_list_item_button {
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+}
+
+.item_info_description_area {
+  width: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+.item_info_description_area > img:first-of-type {
+  padding-top: 20px;
+}
+
+.item_info_description_area_img {
+  width: 100%;
+  height: auto;
+}
+
+.item_info_description_area_text {
+  margin: 100px 10px;
+}
+
+.item_info_description_area_text_title01 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 0.8em;
+  text-align: center;
+}
+
+.item_info_description_area_text_title01 > span {
+  color: rgb(255, 155, 170);
+  font-size: 22px;
+}
+
+.item_info_description_area_text_paragraph {
+  text-align: center;
+}
+
+.paragraph01,
+.paragraph02 {
+  font-size: 15px;
+}
+
+.bottombar_button_container {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(204, 226, 204);
+}
+
+.bottombar_button_container > button:first-of-type {
+  border-right: 1px solid white;
+}
+
+.bottombar_button {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  color: darkolivegreen;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.with_bg_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+  background-image: url("img/etc/detail/icecream_description04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item_item_info_description_area_coment {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-family: "Yeseva One", cursive;
+  text-shadow: -1px -1px 1px rgba(161, 174, 185, 0.3),
+    1px 1px 1px rgba(44, 44, 44, 0.5);
+}
+
+.item_info_description_area_img_bg {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.item_info_description_area_text_title02 {
+  padding: 0 0px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.paragraph03 {
+  padding: 70px 20px 0 20px;
+}
+
+.paragraph03 > span {
+  color: crimson;
+  font-size: 27px;
+}
