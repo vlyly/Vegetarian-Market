@@ -56,6 +56,7 @@ li {
 }
 
 .topBar_container {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -71,6 +72,7 @@ li {
 }
 
 .topBar_menu_list {
+  display: flex;
   width: 23%;
 }
 
@@ -85,6 +87,7 @@ li {
 }
 
 .topBar_search_container {
+  display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 5px;
@@ -113,9 +116,17 @@ li {
   margin: 0 auto;
 }
 
+.navigation_list {
+  display: flex;
+}
+
 .navigation_list_item {
   width: 25%;
   text-align: center;
+}
+
+.navigation_list_item:first-child {
+  display: none;
 }
 
 .navigation_list_item_anchor {
@@ -124,7 +135,7 @@ li {
   height: 51px;
   padding: 12px 0;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .navigation_list_item_anchor:hover {
@@ -146,7 +157,7 @@ li {
 
 .image_slide {
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   overflow: hidden;
 }
 
@@ -157,6 +168,7 @@ li {
 }
 
 .image_slide_list {
+  display: flex;
   align-items: center;
   position: relative;
   float: left;
@@ -164,11 +176,12 @@ li {
 }
 
 .image_slide_list_item {
+  display: flex;
   align-items: center;
   flex-shrink: 0;
   position: relative;
   width: 100vw;
-  max-width: 960px;
+  max-width: 1024px;
 }
 
 .image_slide_list_item_image {
@@ -210,24 +223,20 @@ li {
 }
 
 .category_list {
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.category_list li:nth-child(9),
-.category_list li:nth-child(10),
-.category_list li:nth-child(11) {
-  display: none;
-}
-
 .category_list_item {
   display: block;
-  width: 25%;
-  margin-bottom: 10px;
+  width: 20%;
+  margin-bottom: 15px;
 }
 
 .category_list_item_anchor {
   display: block;
+  position: relative;
   width: fit-content;
   margin: 0 auto;
 }
@@ -236,73 +245,36 @@ li {
   opacity: 0.5;
 }
 
-.category_list_item_icon {
+.category_list_item_anchor::before {
   display: block;
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 5px auto;
-  border-radius: 13px;
+  width: 55px;
+  height: 55px;
+  border-radius: 28px;
+  background-color: rgb(255, 248, 199);
+  content: "";
+}
+
+.category_list_item_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.category_list_item_img {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  top: 0px;
+  width: 55px;
+  padding: 7.5px;
   font-size: 30px;
   text-align: center;
 }
 
-.category_list_item_icon > i::before {
-  display: block;
-  margin: 13px 0;
-}
-
-.category_list_item_icon_event {
-  background-color: rgb(252, 236, 150);
-  color: goldenrod;
-}
-
-.category_list_item_icon_new {
-  background-color: lightpink;
-  color: rgb(250, 102, 124);
-}
-
-.category_list_item_icon_sale {
-  background-color: rgb(212, 236, 212);
-  color: darkseagreen;
-}
-
-.category_list_item_icon_todayDelivery {
-  background-color: rgb(166, 187, 224);
-  color: steelblue;
-}
-
-.category_list_item_icon_ranking {
-  background-color: rgb(240, 192, 208);
-  color: palevioletred;
-}
-
-.category_list_item_icon_store {
-  background-color: lightgrey;
-  color: rgb(128, 128, 128);
-}
-
-.category_list_item_icon_gift {
-  background-color: seashell;
-  color: rgb(167, 159, 154);
-}
-
-.category_list_item_icon_showMore {
-  background-color: lavender;
-  color: slateblue;
-}
-
-.category_list_item_icon_review {
-  background-color: rgb(224, 204, 226);
-  color: rgb(161, 121, 165);
-}
-
-.category_list_item_icon_recipe {
-  background-color: rgb(255, 217, 147);
-  color: orange;
-}
-
-.category_list_item_img:last-child {
-  fill: goldenrod;
+.category_list li:nth-child(8) > a > img {
+  padding: 9px;
 }
 
 .category_list_item_name {
@@ -314,6 +286,10 @@ li {
 
 .margin-bottom_control {
   margin-bottom: 70px;
+}
+
+.margin-bottom_control:first-of-type {
+  margin-bottom: 50px;
 }
 
 .sec_title {
@@ -388,6 +364,7 @@ li {
 }
 
 .ad_list {
+  display: flex;
   justify-content: space-around;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -401,8 +378,6 @@ li {
   height: 120px;
   margin-bottom: 7px;
   padding: 3px 7px;
-  background-color: pink;
-  border-radius: 10px;
   text-align: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -449,6 +424,7 @@ li {
 }
 
 .payment_promotion_list {
+  display: flex;
   margin: 0 10px;
   overflow-x: scroll;
   -ms-overflow-style: none;
@@ -459,6 +435,7 @@ li {
 }
 
 .payment_promotion_list_item {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -535,6 +512,7 @@ li {
 }
 
 .item_slide_list {
+  display: flex;
   margin: 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   overflow-x: scroll;
@@ -556,7 +534,6 @@ li {
 .image_box {
   width: 130px;
   height: 130px;
-  border-radius: 7px;
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -607,7 +584,7 @@ li {
 }
 
 .recommend_themes_control_container {
-  margin-bottom: 15px;
+  margin: 15px 0 0 10px;
 }
 
 .recommend_control_button {
@@ -661,6 +638,7 @@ li {
 .exhibition_container a:not(:last-child) {
   margin-bottom: 50px;
 }
+
 .exhibition_sec_title_1024px_container {
   display: none;
 }
@@ -759,7 +737,6 @@ li {
   height: 0;
   padding-bottom: 100%;
   margin-bottom: 6px;
-  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -793,6 +770,7 @@ li {
 }
 
 .recipe_control_button_container {
+  display: flex;
   justify-content: space-between;
   position: absolute;
   top: 48%; /*추후 반드시 수정*/
@@ -811,6 +789,10 @@ li {
   overflow: hidden;
 }
 
+.recipe_slide_list {
+  display: flex;
+}
+
 .recipe_slide_list_item {
   flex-shrink: 0;
   width: 100%;
@@ -818,7 +800,7 @@ li {
 
 .recipe_slide_list_item_image {
   width: 100%;
-  height: 150px;
+  height: 120px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -855,11 +837,12 @@ footer {
 }
 
 .footer_contents_list {
+  display: flex;
   width: 100%;
   padding: 10px;
 }
 
-.footer_contents_item {
+.footer_contents_item_anchor {
   width: 25%;
   background-color: white;
 }
@@ -874,10 +857,11 @@ footer {
 }
 
 .footer_terms_list {
+  display: flex;
   width: 100%;
 }
 
-.footer_terms_item {
+.footer_terms_item_anchor {
   width: 25%;
 }
 
@@ -890,6 +874,7 @@ footer {
 }
 
 .footer_logo_mobile_ver {
+  display: flex;
   padding: 40px 0 20px 0;
   color: darkseagreen;
   font-family: "Open Sans", sans-serif;
@@ -906,20 +891,6 @@ footer {
   #image_slide_list_item02 > img {
     top: 2%;
   }
-
-  .category_list_item {
-    width: 20%;
-  }
-
-  .category_list li:nth-child(8) {
-    display: none;
-  }
-
-  .category_list li:nth-child(9),
-  .category_list li:nth-child(10),
-  .category_list li:nth-child(11) {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 414px) {
@@ -933,10 +904,6 @@ footer {
 
   .topBar_menu_list_item {
     font-size: 20px;
-  }
-
-  .image_slide_list_item {
-    height: 250px;
   }
 
   #image_slide_list_item01 > img {
@@ -972,6 +939,7 @@ footer {
     flex-wrap: nowrap;
     margin: 35px auto 10px auto;
   }
+
   .topBar_logo {
     order: 1;
     width: 20%;
@@ -1028,6 +996,14 @@ footer {
     height: 33px;
   }
 
+  .navigation_list_item {
+    width: 25%;
+  }
+
+  .navigation_list_item:first-child {
+    display: block;
+  }
+
   .navigation_list_item_anchor {
     padding: 15px 0;
     font-size: 15px;
@@ -1071,7 +1047,7 @@ footer {
   }
 
   .time_sale_list_item_image_count_container {
-    height: 230px;
+    height: 250px;
     margin-bottom: 15px;
   }
 
@@ -1216,6 +1192,10 @@ footer {
     margin-bottom: 130px;
   }
 
+  .margin-bottom_control:first-child {
+    margin-bottom: auto;
+  }
+
   .topBar_logo {
     width: 20%;
     font-size: 21px;
@@ -1224,6 +1204,7 @@ footer {
   .topBar_menu_list {
     width: 10%;
   }
+
   .topBar_menu_list_item {
     font-size: 23px;
   }
@@ -1231,9 +1212,21 @@ footer {
   .topBar_search_container {
     width: 67%;
   }
+  /* 
+  .navigation_list_item {
+    width: 25%;
+  }
+
+  .navigation_list_item:first-child {
+    display: block;
+  } */
 
   .image_slide_control_button {
     font-size: 18px;
+  }
+
+  .sec_title {
+    margin: 0 0 15px 0;
   }
 
   .time_sale_list_item_image_count_container {
@@ -1249,7 +1242,7 @@ footer {
   }
 
   .payment_promotion_list {
-    overflow: hidden;
+    overflow: auto;
   }
 
   .item_slide_container > button {
