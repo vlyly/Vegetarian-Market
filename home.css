@@ -842,18 +842,18 @@ footer {
   padding: 10px;
 }
 
-.footer_contents_item_anchor {
+.footer_contents {
   width: 25%;
-  background-color: white;
 }
 
-.footer_contents {
+.footer_contents_item {
   display: block;
   width: 100%;
   padding: 17px 0;
   font-size: 12px;
   font-weight: 700;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .footer_terms_list {
@@ -861,7 +861,7 @@ footer {
   width: 100%;
 }
 
-.footer_terms_item_anchor {
+.footer_terms_item {
   width: 25%;
 }
 
@@ -874,9 +874,9 @@ footer {
 }
 
 .footer_logo_mobile_ver {
-  display: flex;
-  padding: 40px 0 20px 0;
-  color: darkseagreen;
+  width: 100%;
+  padding: 40px 0;
+  color: #8fbc8f;
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 400;
