@@ -113,12 +113,12 @@ li {
   margin: 0 auto;
 }
 
-.category_list_item {
+.navigation_list_item {
   width: 25%;
   text-align: center;
 }
 
-.category_list_item_anchor {
+.navigation_list_item_anchor {
   display: inline-block;
   width: 100%;
   height: 51px;
@@ -127,13 +127,13 @@ li {
   font-size: 13px;
 }
 
-.category_list_item_anchor:hover {
+.navigation_list_item_anchor:hover {
   border-bottom: darkseagreen 3px solid;
   color: darkseagreen;
   font-weight: 700;
 }
 
-.category_list_item_selected {
+.navigation_list_item_selected {
   height: 51px;
   border-bottom: darkseagreen 3px solid;
   color: darkseagreen;
@@ -209,34 +209,34 @@ li {
   opacity: 0.5;
 }
 
-.quickMenu_list {
+.category_list {
   flex-wrap: wrap;
   width: 100%;
 }
 
-.quickMenu_list li:nth-child(9),
-.quickMenu_list li:nth-child(10),
-.quickMenu_list li:nth-child(11) {
+.category_list li:nth-child(9),
+.category_list li:nth-child(10),
+.category_list li:nth-child(11) {
   display: none;
 }
 
-.quickMenu_list_item {
+.category_list_item {
   display: block;
   width: 25%;
   margin-bottom: 10px;
 }
 
-.quickMenu_list_item_anchor {
+.category_list_item_anchor {
   display: block;
   width: fit-content;
   margin: 0 auto;
 }
 
-.quickMenu_list_item_anchor:hover {
+.category_list_item_anchor:hover {
   opacity: 0.5;
 }
 
-.quickMenu_list_item_icon {
+.category_list_item_icon {
   display: block;
   width: 56px;
   height: 56px;
@@ -246,67 +246,66 @@ li {
   text-align: center;
 }
 
-.quickMenu_list_item_icon > i::before {
+.category_list_item_icon > i::before {
   display: block;
   margin: 13px 0;
 }
 
-.quickMenu_list_item_icon_event {
+.category_list_item_icon_event {
   background-color: rgb(252, 236, 150);
   color: goldenrod;
 }
 
-.quickMenu_list_item_icon_new {
+.category_list_item_icon_new {
   background-color: lightpink;
   color: rgb(250, 102, 124);
 }
 
-.quickMenu_list_item_icon_sale {
+.category_list_item_icon_sale {
   background-color: rgb(212, 236, 212);
   color: darkseagreen;
 }
 
-.quickMenu_list_item_icon_todayDelivery {
+.category_list_item_icon_todayDelivery {
   background-color: rgb(166, 187, 224);
   color: steelblue;
 }
 
-.quickMenu_list_item_icon_ranking {
+.category_list_item_icon_ranking {
   background-color: rgb(240, 192, 208);
   color: palevioletred;
 }
 
-.quickMenu_list_item_icon_store {
+.category_list_item_icon_store {
   background-color: lightgrey;
   color: rgb(128, 128, 128);
 }
 
-.quickMenu_list_item_icon_gift {
+.category_list_item_icon_gift {
   background-color: seashell;
   color: rgb(167, 159, 154);
 }
 
-.quickMenu_list_item_icon_showMore {
+.category_list_item_icon_showMore {
   background-color: lavender;
   color: slateblue;
 }
 
-.quickMenu_list_item_icon_review {
+.category_list_item_icon_review {
   background-color: rgb(224, 204, 226);
   color: rgb(161, 121, 165);
 }
 
-.quickMenu_list_item_icon_recipe {
+.category_list_item_icon_recipe {
   background-color: rgb(255, 217, 147);
   color: orange;
 }
 
-.quickMenu_list_item_icon_inquiry {
-  background-color: rgb(219, 253, 242);
-  color: rgb(109, 216, 180);
+.category_list_item_img:last-child {
+  fill: goldenrod;
 }
 
-.quickMenu_list_item_name {
+.category_list_item_name {
   width: 100%;
   font-size: 12px;
   font-family: "Noto Sans KR", sans-serif;
@@ -908,17 +907,17 @@ footer {
     top: 2%;
   }
 
-  .quickMenu_list_item {
+  .category_list_item {
     width: 20%;
   }
 
-  .quickMenu_list li:nth-child(8) {
+  .category_list li:nth-child(8) {
     display: none;
   }
 
-  .quickMenu_list li:nth-child(9),
-  .quickMenu_list li:nth-child(10),
-  .quickMenu_list li:nth-child(11) {
+  .category_list li:nth-child(9),
+  .category_list li:nth-child(10),
+  .category_list li:nth-child(11) {
     display: block;
   }
 }
@@ -948,7 +947,7 @@ footer {
     top: 3%;
   }
 
-  .quickMenu_list_item_name {
+  .category_list_item_name {
     font-size: 13px;
   }
 
@@ -1029,7 +1028,7 @@ footer {
     height: 33px;
   }
 
-  .category_list_item_anchor {
+  .navigation_list_item_anchor {
     padding: 15px 0;
     font-size: 15px;
   }
@@ -1051,15 +1050,15 @@ footer {
     font-size: 20px;
   }
 
-  .quickMenu_list {
+  .category_list {
     display: none;
   }
 
-  .quickMenu_list_item {
+  .category_list_item {
     margin-bottom: 17px;
   }
 
-  .quickMenu_list_item_name {
+  .category_list_item_name {
     font-size: 14px;
   }
 
